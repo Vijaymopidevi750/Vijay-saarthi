@@ -12,8 +12,6 @@ CREATE TABLE book (
     PRIMARY KEY (id)
 );
 
- 111  book_api.py 
-@@ -0,0 +1,111 @@
 import flask
 import requests
 import json
@@ -125,9 +123,8 @@ def update_book(book_id):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
- 69  mysqlconnect.py 
-@@ -0,0 +1,69 @@
-import pymysql
+    
+    import pymysql
 import collections
 
 class dbConnection:
